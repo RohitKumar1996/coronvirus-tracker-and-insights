@@ -1,1 +1,1 @@
-# coronvirus-tracker-and-insights
+# coronavirus-tracker-and-insights
