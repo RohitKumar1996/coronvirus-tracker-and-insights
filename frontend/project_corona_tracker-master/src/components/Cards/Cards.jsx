@@ -34,97 +34,79 @@ const Info = ({ data, country }) => {
       <Grid container spacing={3} justify="center">
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.topCards)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="primary" variant="h5" component="h2" gutterBottom >
               Total Infected
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h3">
               <CountUp start={0} end={TotalConfirmed} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-              Latest updated : {new Date(date).toDateString()}
-            </Typography>
-            <Typography variant="body2" component="p">
-            Total Number of active cases of COVID-19.
+              (Latest updated : {new Date(date).toDateString()})
             </Typography>
           </CardContent>
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.topCards)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="primary" variant="h5" component="h2" gutterBottom>
               Total Recovered
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h3">
               <CountUp start={0} end={TotalRecovered} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-            Latest updated : {new Date(date).toDateString()}
-            </Typography>
-            <Typography variant="body2" component="p">
-            Total Number of recoveries from COVID-19.
+              (Latest updated : {new Date(date).toDateString()})
             </Typography>
           </CardContent>
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.topCards)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="primary" variant="h5" component="h2" gutterBottom>
               Total Deaths
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h3">
               <CountUp start={0} end={TotalDeaths} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-            Latest updated : {new Date(date).toDateString()}
-            </Typography>
-            <Typography variant="body2" component="p">
-              Total Number of deaths caused by COVID-19.
+              (Latest updated : {new Date(date).toDateString()})
             </Typography>
           </CardContent>
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.bottomCards)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="primary" variant="h5" component="h2" gutterBottom>
               New Active cases
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h3">
               <CountUp start={0} end={NewConfirmed} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-            Latest updated : {new Date(date).toDateString()}
-            </Typography>
-            <Typography variant="body2" component="p">
-              Number of new confirmed cases of COVID-19.
+              (Latest updated : {new Date(date).toDateString()})
             </Typography>
           </CardContent>
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.bottomCards)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="primary" variant="h5" component="h2" gutterBottom>
               New Recoveries
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h3">
               <CountUp start={0} end={NewRecovered} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-            Latest updated : {new Date(date).toDateString()}
-            </Typography>
-            <Typography variant="body2" component="p">
-              Number of new recoveries from COVID-19.
+              (Latest updated : {new Date(date).toDateString()})
             </Typography>
           </CardContent>
         </Grid>
         <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.bottomCards)}>
           <CardContent>
-            <Typography color="textSecondary" gutterBottom>
+            <Typography color="primary" variant="h5" component="h2" gutterBottom>
               New Deaths
             </Typography>
-            <Typography variant="h5" component="h2">
+            <Typography variant="h5" component="h3">
               <CountUp start={0} end={NewDeaths} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-            Latest updated : {new Date(date).toDateString()}
-            </Typography>
-            <Typography variant="body2" component="p">
-              Number of new deaths caused by COVID-19.
+              (Latest updated : {new Date(date).toDateString()})
             </Typography>
           </CardContent>
         </Grid>

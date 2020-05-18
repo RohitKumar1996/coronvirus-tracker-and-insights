@@ -30,8 +30,11 @@ class App extends React.Component {
     return (
       <div className={styles.container}>
         <img className={styles.image} src={image} alt="COVID-19" />
-        <Cards data={data} country={country} />
+        <h3 className={styles.dropDownHeading}>
+          Please select a country (By default, insights are provided at the global level)
+        </h3>
         <CountryPicker handleCountryChange={this.handleCountryChange} />
+        <Cards data={data} country={country} />
         <Chart data={data} country={country} /> 
       </div>
     );

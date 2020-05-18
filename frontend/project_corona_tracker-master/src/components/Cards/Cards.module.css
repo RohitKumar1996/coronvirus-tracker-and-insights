@@ -10,17 +10,19 @@
 }
 
 .topCards {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  border: 1px outset rgba(92,80,87,0.54);
   border-bottom: 10px solid rgb(93, 98, 181);
-  border-top: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
   border-radius: 0px 0px 0px 0px;
 }
 
 .bottomCards{
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  border: 1px outset rgba(92,80,87,0.54);
   border-radius: 0px 0px 0px 0px;
 }
 
