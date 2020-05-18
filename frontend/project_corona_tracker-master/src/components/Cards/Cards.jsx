@@ -32,7 +32,7 @@ const Info = ({ data, country }) => {
   return (
     <div className={styles.container}>
       <Grid container spacing={3} justify="center">
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.infected)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.topCards)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Total Infected
@@ -41,14 +41,14 @@ const Info = ({ data, country }) => {
               <CountUp start={0} end={TotalConfirmed} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-              {new Date(date).toDateString()}
+              Latest updated : {new Date(date).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
             Total Number of active cases of COVID-19.
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.recovered)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.topCards)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Total Recovered
@@ -57,14 +57,14 @@ const Info = ({ data, country }) => {
               <CountUp start={0} end={TotalRecovered} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-              {new Date(date).toDateString()}
+            Latest updated : {new Date(date).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
             Total Number of recoveries from COVID-19.
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.topCards)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               Total Deaths
@@ -73,14 +73,14 @@ const Info = ({ data, country }) => {
               <CountUp start={0} end={TotalDeaths} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-              {new Date(date).toDateString()}
+            Latest updated : {new Date(date).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
               Total Number of deaths caused by COVID-19.
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.bottomCards)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               New Active cases
@@ -89,14 +89,14 @@ const Info = ({ data, country }) => {
               <CountUp start={0} end={NewConfirmed} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-              {new Date(date).toDateString()}
+            Latest updated : {new Date(date).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
               Number of new confirmed cases of COVID-19.
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.bottomCards)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               New Recoveries
@@ -105,14 +105,14 @@ const Info = ({ data, country }) => {
               <CountUp start={0} end={NewRecovered} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-              {new Date(date).toDateString()}
+            Latest updated : {new Date(date).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
               Number of new recoveries from COVID-19.
             </Typography>
           </CardContent>
         </Grid>
-        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.deaths)}>
+        <Grid item xs={12} md={3} component={Card} className={cx(styles.card, styles.bottomCards)}>
           <CardContent>
             <Typography color="textSecondary" gutterBottom>
               New Deaths
@@ -121,7 +121,7 @@ const Info = ({ data, country }) => {
               <CountUp start={0} end={NewDeaths} duration={2.75} separator="," />
             </Typography>
             <Typography color="textSecondary">
-              {new Date(date).toDateString()}
+            Latest updated : {new Date(date).toDateString()}
             </Typography>
             <Typography variant="body2" component="p">
               Number of new deaths caused by COVID-19.

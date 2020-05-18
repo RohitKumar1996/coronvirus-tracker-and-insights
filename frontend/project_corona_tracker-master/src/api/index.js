@@ -24,6 +24,13 @@ export const fetchData = async (country) => {
 
       var arr2 = data["Global"];
       arr2["date"] = data["Date"];
+      arr2["td"] = data["topDeath"];
+      arr2["tc"] = data["topConfirmed"];
+      arr2["tr"] = data["topRecovered"];
+      arr2["tnd"] = data["topNewDeath"];
+      arr2["tnc"] = data["topNewConfirmed"];
+      arr2["tnr"] = data["topNewRecovered"];
+      
       console.log(arr2);
 
       return arr2;

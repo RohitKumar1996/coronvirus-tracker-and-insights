@@ -4,6 +4,19 @@
   width: 65%;
 }
 
+
+.chartDiv {
+  -moz-box-shadow: 0 0 3px #ccc;
+  -webkit-box-shadow: 0 0 3px #ccc;
+  box-shadow: 0 0 3px #ccc;
+  border: 1px outset rgba(92,80,87,0.54);
+  border-radius: 4px 4px 4px 4px;
+  margin-top: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+
 @media only screen and (max-width: 770px) {
   .container {
     width: 100%;
