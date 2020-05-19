@@ -1,7 +1,11 @@
 # coronavirus-tracker-and-insights
 
 # COVID-19 Tracking & Insights
-![COVID-19 Tracking and Insights](https://j.gifs.com/81rM1o.gif)
+![COVID-19 Tracking and Insights](
+https://ibb.co/dQcM1xL
+https://ibb.co/Jmph8bq
+https://ibb.co/prRv3Dq
+)
 
 ### [Live Site](https://covid19statswebsite.netlify.com/)
 
