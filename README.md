@@ -6,6 +6,5 @@
 ![](https://i.ibb.co/KzLj9Zn/Screenshot-from-2020-05-20-01-44-02.png)
 
 
-### [Live Site](https://amazing-pare-63b551.netlify.app/)
 
 
